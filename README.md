@@ -20,9 +20,9 @@ The program will run on startup everytime. To get this to happen add
 xkcd_launch.sh to your systems start up applications. 
 
 How:
-    1) Launch 'Startup Applications Preferences'
-    2) Click 'Add'
-    3) For 'Command:' put the full path to xkcd_launch.sh
+ * Launch 'Startup Applications Preferences'
+* Click 'Add'
+ * For 'Command:' put the full path to xkcd_launch.sh
 
 ### Detailed Breakdown
 
