@@ -26,7 +26,7 @@ How:
 
 ### Detailed Breakdown
 
-The launch cript will get the html file for XKCD's comic archive and then 
+The launch script will get the html file for XKCD's comic archive and then 
 launch the python code. Python then searched the html for the most recent 
 comic's title which is listed next to the current date. With the title,
 the image URL can be known and Downloaded into the local directory.
