@@ -47,9 +47,11 @@ def GrabImage():
         
 
     if new_comic_found == True:
+        print("New Comic Found")
         # Grab title from html line
         comic_title = comic_title.split('>', 1)[-1]
         comic_title = comic_title.split('<', 1)[0].lower()
+        comic_title = comic_title.replace(" ", "_")
         print("Title: " + comic_title)
         image_url = "https://imgs.xkcd.com/comics/" + comic_title + ".png"
 
