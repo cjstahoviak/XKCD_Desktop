@@ -27,6 +27,8 @@ def GrabImage():
     new_comic_found = False
     n = 1
 
+    # The comic's title is listed next to the 
+    # current date, find that and parse it out
     while new_comic_found == False: 
         searchfile = open(html_file, "r")
         for line in searchfile:
@@ -45,13 +47,15 @@ def GrabImage():
             html_key = "title=" + date + ">"
 
         
-
+    # Concatenatethe image url using the comics title
+    # Thank god he always titles them this way
     if new_comic_found == True:
         print("New Comic Found")
         # Grab title from html line
         comic_title = comic_title.split('>', 1)[-1]
         comic_title = comic_title.split('<', 1)[0].lower()
         comic_title = comic_title.replace(" ", "_")
+        comic_title = comic_title.replace("-", "_")
         print("Title: " + comic_title)
         image_url = "https://imgs.xkcd.com/comics/" + comic_title + ".png"
 
@@ -62,7 +66,7 @@ def GrabImage():
     else:
         return 0
 
-# Let's create the final background
+# Let's create the final background and save it to a new image file
 def OpenCVWork():
     s_img = cv2.imread(comic_image)
     s_height, s_width, s_channels = s_img.shape
