@@ -1,4 +1,4 @@
-## XKCD Desktop Script
+## XKCD Desktop BASH Script
 
 This script grabs the most recent comic posted by XKCD and imposes it on 
 another background image which it then makes your desktop background. Enjoy
