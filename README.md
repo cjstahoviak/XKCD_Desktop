@@ -16,12 +16,12 @@ sudo apt-get install python-opencv
 
 ### Linux Setup
 
-The program will run on startup everytime. To get this to happen add 
+The program will need to run on startup everytime. To get this to happen add 
 xkcd_launch.sh to your systems start up applications. 
 
 How:
  * Launch 'Startup Applications Preferences'
-* Click 'Add'
+ * Click 'Add'
  * For 'Command:' put the full path to xkcd_launch.sh
 
 ### Detailed Breakdown
