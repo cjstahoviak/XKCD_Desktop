@@ -4,7 +4,7 @@
 
 This script grabs the most recent comic posted by XKCD and imposes it on 
 another background image which it then makes your desktop background. Enjoy
-the newest XKCD comic on your desktop whenever you turn on your ocmputer 
+the newest XKCD comic on your desktop whenever you turn on your computer 
 without any extra effort!
 
 ### Requirements
@@ -25,6 +25,9 @@ How:
  * Launch 'Startup Applications Preferences'
  * Click 'Add'
  * For 'Command:' put the full path to xkcd_launch.sh
+
+### Windows Setup
+
 
 ### Detailed Breakdown
 
